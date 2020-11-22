@@ -1,4 +1,5 @@
 import React from 'react'
+import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
 
 const SingleTrack = props => {
@@ -14,7 +15,5 @@ const SingleTrack = props => {
   </div>
 )
 }
-
-
-
-export default SingleTrack;
+ 
+export default SingleTrack
