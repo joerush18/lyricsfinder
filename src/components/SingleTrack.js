@@ -10,7 +10,7 @@ const SingleTrack = props => {
         <h5 className="card-title">{props.title}</h5>
         <p className="card-text">{props.artistname}</p>
         <button onClick = {props.click} className="btn btn-primary">Lyrics</button>
-      </div>
+     </div>
     </div>
   </div>
 )
