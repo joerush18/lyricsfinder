@@ -63,7 +63,7 @@ return(
   </svg>
         <h4>Today's top 6 hits</h4>
     </div>
-    <div className = 'row '>
+    <div className = 'row'>
      {song}
      <div>
      {error}

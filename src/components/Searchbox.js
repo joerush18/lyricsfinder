@@ -1,4 +1,4 @@
-import React, {useState , useEffect} from 'react'
+import React, {useState ,} from 'react'
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import {withRouter} from 'react-router-dom';
 
@@ -18,7 +18,7 @@ props.history.push(
 
 }
 const onChangeHandler = ( event ) =>{
-  setArtistName(event.target.value)
+  setArtistName(event.target.value);
   console.log(ArtistName)
 }
 
