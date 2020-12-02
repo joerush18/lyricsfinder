@@ -14,17 +14,17 @@ const SearchResult = props => {
      
     
     useEffect(() => {
-      setSpin(true);
-        fetchData();
-        },[])
+      setSpin(true)
+      let Artistname = props.location.search.replace('?', '');
+      fetchData(Artistname)
+        },[ArtistName])
           
 
 
-const fetchData= ()=>{
+const fetchData= (Artistname)=>{
     // i dont know why i used this crazylogic.
-   let Artistname = props.location.search.replace('?', '');
-   setArtistName(Artistname);
-   let REQ_ID = `track.search?q_artist=${ArtistName}&page_size=6&page=1&s_track_rating=desc&f_has_lyrics&apikey=${API_KEY}`
+     setArtistName(Artistname);
+     let REQ_ID = `track.search?q_artist=${Artistname}&page_size=6&page=1&s_track_rating=desc&f_has_lyrics&apikey=${API_KEY}`
            Instance.get(REQ_ID).then(res => {
                console.log(res.data.message)
            setSearchedTracks(res.data.message.body.track_list);
@@ -58,7 +58,7 @@ if(!Spin){
      <div>
      <div className = 'container mt-5 mr-auto text-center'>
       <div className='row text-center'>
-        <h4 style= {{ textTransform : 'capitalize'}}>Songs by {ArtistName}</h4>
+        <h4 style= {{ textTransform : 'capitalize'}}>Songs by: {ArtistName}</h4>
       </div>
     <div className = 'row '>
     {body}

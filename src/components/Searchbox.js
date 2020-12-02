@@ -27,7 +27,7 @@ return (
       <div className = 'container-fluid mt-5 '>
       <form className="form-inline offset-md-5" onSubmit={onSubmitHandler}>
       <input className="form-control mr-sm-2" type="search" placeholder='Enter artist name' aria-label="Search" onChange={onChangeHandler}/>
-      <button className="btn btn-outline-success my-2 my-sm-0" type="submit" >Search</button>
+      <button className="btn btn-outline-success my-2 my-sm-0" type="submit" onClick = {onSubmitHandler} >Search</button>
       <div>
       </div>
       </form>

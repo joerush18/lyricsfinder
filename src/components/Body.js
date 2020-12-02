@@ -63,7 +63,7 @@ return(
   </svg>
         <h4>Today's top 6 hits</h4>
     </div>
-    <div className = 'row'>
+    <div className = 'row text-center'>
      {song}
      <div>
      {error}
@@ -73,4 +73,4 @@ return(
     </div>  
 );  
 }
-export default Body
+export default Body;
