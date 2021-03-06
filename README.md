@@ -9,8 +9,6 @@ Todo in future :-
 2.introducing redux.
 3.Solving issue soon.
 
-Issues:-
-1. you cant search another artist when being in search page but can once you click lyrics.Suggest if you can.
 
 Securitylevel:
 -------------->20%
