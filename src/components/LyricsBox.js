@@ -18,7 +18,7 @@ const LyricsBox = (props) => {
 
   let keys = Object.keys(id);
 
-  useEffect(() => console.log(keys), []);
+  //useEffect(() => console.log(keys), []);
 
   useEffect(() => {
     Instance.get(`track.lyrics.get?track_id=${keys[0]}&apikey=${API_KEY}`)
